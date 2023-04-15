@@ -1,0 +1,98 @@
+*, *::before, *::after
+{
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html
+{
+  overflow: hidden;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.preview-image-container
+{
+  width: 50%;
+  background: #000;
+  height: 100vh;
+  line-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.editing-tools-container
+{
+  width: 50%;
+  background: #1d1d1f;
+  height: 100vh;
+  color: #fff;
+  font-size: 12.5px;
+}
+
+.preview-image
+{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+td
+{
+  text-align: center;
+  vertical-align: middle;
+}
+
+input[type="range"]
+{ 
+  display: block;
+  margin: 8.75px auto;
+}
+
+#imageInputLabel
+{
+  background: #fff;
+  border-radius: 50px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.editing-tools
+{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  width: 150px;
+  background: linear-gradient(#1d1d1f, #000);
+  outline: none;
+  border-radius: 50px;
+}
+
+.editing-tools::-webkit-slider-thumb
+{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: dodgerblue;
+  cursor: default;
+  border-radius: 50%;
+}
+
+.editing-tools::-moz-range-thumb
+{
+  width: 10px;
+  height: 10px;
+  background: dodgerblue;
+  cursor: default;
+  border-radius: 50%;
+}
